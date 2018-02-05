@@ -18,3 +18,7 @@ def valid_move?(board, index)
   #index is within a range 0-8 AND board at index is not occupied
   index.between?(0,8) && !position_taken?(board, index)
 end
+
+def move( board, input_to_index, token = "X")
+  board[input_to_index] = token
+end
